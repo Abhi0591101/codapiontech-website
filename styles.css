@@ -167,6 +167,11 @@ h1 {
 .contact-box p,
 .contact-box p a {
     color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-box p a:hover {
+    color: #11d2cb;
 }
 
 .about-section {
