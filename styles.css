@@ -164,8 +164,9 @@ h1 {
 
 .card p,
 .about-grid p,
-.contact-box p {
-    color: var(--muted);
+.contact-box p,
+.contact-box p a {
+    color: #ffffff;
 }
 
 .about-section {
