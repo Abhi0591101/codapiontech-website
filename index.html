@@ -96,7 +96,8 @@
             </div>
             <div class="project-grid">
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20200603.png" alt="Project dashboard preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20200603.png"
+                        alt="Project dashboard preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Enterprise Dashboard</h3>
                         <p>Responsive analytics experience for operations teams with live KPIs, role-based access, and
@@ -104,7 +105,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20200739.png" alt="Project workflow preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20200739.png"
+                        alt="Project workflow preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Workflow Automation</h3>
                         <p>Streamlined process management for business teams with approvals, reminders, and a simple
@@ -112,7 +114,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20201129.png" alt="Project app preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20201129.png"
+                        alt="Project app preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Client Portal</h3>
                         <p>Secure and intuitive portal experience built for collaboration, document access, and
@@ -120,7 +123,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20201619.png" alt="Project UI preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20201619.png"
+                        alt="Project UI preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Digital Experience</h3>
                         <p>Modern interface design crafted to present services, updates, and information in a polished,
@@ -128,7 +132,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20201822.png" alt="Project overview preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20201822.png"
+                        alt="Project overview preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Project Overview</h3>
                         <p>Clear information architecture for presenting milestones, progress, and expectations in one
@@ -136,7 +141,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20201934.png" alt="Project planning preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20201934.png"
+                        alt="Project planning preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Planning Interface</h3>
                         <p>Structured planning screens designed to keep tasks, owners, and timelines easy to understand.
@@ -144,7 +150,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="projects/Screenshot%202026-07-06%20202148.png" alt="Project launch preview" />
+                    <img class="project-thumb" src="projects/Screenshot%202026-07-06%20202148.png"
+                        alt="Project launch preview" role="button" tabindex="0" />
                     <div class="project-card-body">
                         <h3>Launch Readiness</h3>
                         <p>Launch-focused layouts built for tracking deliverables, reviews, and rollout readiness with
@@ -204,6 +211,56 @@
             </div>
         </section>
     </main>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <button class="project-modal-close" id="projectModalClose" aria-label="Close preview">×</button>
+        <img id="projectModalImage" src="" alt="Project preview" />
+    </div>
+
+    <script>
+        const modal = document.getElementById('projectModal');
+        const modalImage = document.getElementById('projectModalImage');
+        const closeButton = document.getElementById('projectModalClose');
+        const thumbnails = document.querySelectorAll('.project-thumb');
+
+        function openModal(src, alt) {
+            modalImage.src = src;
+            modalImage.alt = alt;
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+            modalImage.removeAttribute('src');
+            document.body.style.overflow = '';
+        }
+
+        thumbnails.forEach((thumb) => {
+            thumb.addEventListener('click', () => openModal(thumb.src, thumb.alt));
+            thumb.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openModal(thumb.src, thumb.alt);
+                }
+            });
+        });
+
+        closeButton.addEventListener('click', closeModal);
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 
 </html>
