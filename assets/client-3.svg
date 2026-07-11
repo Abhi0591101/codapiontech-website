@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 88" role="img" aria-label="Lumen">
+  <rect width="240" height="88" rx="16" fill="#07111f"/>
+  <rect x="34" y="24" width="34" height="40" rx="8" fill="#2dd4bf"/>
+  <rect x="78" y="24" width="34" height="40" rx="8" fill="#60a5fa"/>
+  <rect x="122" y="24" width="34" height="40" rx="8" fill="#a78bfa"/>
+  <text x="170" y="54" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f4f7fb">LUMEN</text>
+</svg>

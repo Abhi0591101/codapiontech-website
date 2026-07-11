@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 88" role="img" aria-label="Aurix">
+  <rect width="240" height="88" rx="16" fill="#0f213a"/>
+  <path d="M44 28h28l16 16-16 16H44z" fill="#60a5fa"/>
+  <path d="M92 28h28l16 16-16 16H92z" fill="#2dd4bf"/>
+  <text x="144" y="54" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f4f7fb">AURIX</text>
+</svg>
