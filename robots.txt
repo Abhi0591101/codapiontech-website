@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codapiontech.in/sitemap.xml
+Sitemap: https://www.codapiontech.in/sitemap.xml
