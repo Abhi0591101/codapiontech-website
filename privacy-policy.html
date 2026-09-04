@@ -20,70 +20,101 @@
         content="Privacy Policy and client confidentiality standards at Codapion Technologies." />
     <meta property="og:image" content="https://www.codapiontech.in/logo.png" />
 
+    <!-- Google Fonts: Plus Jakarta Sans & Newsreader -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header class="hero policy-hero">
-        <nav class="nav">
-            <a href="https://www.codapiontech.in/" class="brand" title="Codapion Technologies - Home">
-                <img src="logo.png" alt="Codapion Technologies logo" class="brand-logo" width="270" height="62" />
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo-link" title="Codapion Technologies - Home">
+                <img src="logo.png" alt="Codapion Technologies" class="site-logo" width="220" height="56" />
             </a>
-            <div class="nav-links">
-                <a href="index.html#services">IT & Web Services</a>
-                <a href="index.html#media">Media Production</a>
-                <a href="index.html#hubs">Locations</a>
-                <a href="index.html#projects">Projects</a>
-                <a href="index.html#industries">Industries</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#faq">FAQ</a>
-                <a href="index.html#contact">Contact</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
-        </nav>
 
-        <div class="container policy-content">
-            <p class="eyebrow">Client Trust & Compliance</p>
-            <h1>Privacy Policy</h1>
-            <p class="lead">
-                We are committed to protecting your personal information and ensuring that no client data or proprietary intellectual property is published, shared, or displayed publicly without clear authorization.
-            </p>
+            <nav class="nav-menu" aria-label="Main Navigation">
+                <a href="index.html#it-web" class="nav-link">IT & Web</a>
+                <a href="index.html#mobile-apps" class="nav-link">Mobile Apps</a>
+                <a href="index.html#media" class="nav-link">Media Studio</a>
+                <a href="index.html#solutions" class="nav-link">Solutions</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                <a href="index.html#why-us" class="nav-link">Why Us</a>
+                <a href="index.html#offices" class="nav-link">Offices</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="section" style="padding-top: 1rem;">
-            <div class="policy-card">
-                <h2>Our Data Protection Principles</h2>
-                <p>
-                    Codapion Technologies respects the privacy of every visitor, prospective customer, and enterprise partner. Any information you share through our website, contact forms, direct calls, or email is used strictly to respond to your inquiry and deliver requested software engineering, IT, and creative media services.
+    <main>
+        <section class="section" style="background-color: var(--color-sprout-bg); padding: 4.5rem 0 3.5rem;">
+            <div class="container">
+                <span class="eyebrow sprout">CLIENT TRUST & COMPLIANCE</span>
+                <h1 style="font-size: clamp(2.2rem, 3.8vw, 3.2rem); margin-bottom: 1rem; color: var(--color-midnight);">
+                    Privacy <span class="italic-accent">Policy</span>
+                </h1>
+                <p class="lead-text">
+                    We are committed to protecting your personal information and ensuring that client data, source code, and proprietary intellectual property are safeguarded under strict enterprise standards.
                 </p>
-                <ul class="policy-list">
-                    <li><strong>Strict Confidentiality:</strong> No client code, project assets, business workflows, or contact details are published on public channels or shared with third parties.</li>
-                    <li><strong>Zero Marketing Sale:</strong> We do not sell, rent, lease, or monetize your personal or corporate data with third-party advertisers.</li>
-                    <li><strong>Encrypted Communications:</strong> Project communications, server access credentials, and database schemas are handled through secure, restricted access protocols.</li>
-                    <li><strong>Inquiries & Support:</strong> If you have any inquiries regarding data protection, NDA execution, or security compliance, please contact our data team directly.</li>
-                </ul>
-                <p style="margin-top: 1.5rem;">
-                    When you contact Codapion Technologies, we may collect your name, business email, phone number, and project requirements solely to provide you with an accurate scope of work, technical consultation, and proposal.
-                </p>
-                <div style="margin-top: 2rem; padding: 1.25rem; background: #f8fafc; border-radius: 14px; border: 1px solid var(--border);">
-                    <strong>Contact for Privacy Queries:</strong><br />
-                    Email: <a href="mailto:director@codapiontech.in" style="color: var(--accent);">director@codapiontech.in</a> | Phone: <a href="tel:+918433488313" style="color: var(--accent);">+91 8433488313</a>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 3.5rem;">
+            <div class="container" style="max-width: 860px;">
+                <div style="background-color: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--color-border); padding: 3rem; box-shadow: var(--shadow-sm);">
+                    <h2 style="font-size: 1.65rem; margin-bottom: 1.25rem;">Our Data Protection Principles</h2>
+                    <p style="font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+                        Codapion Technologies respects the privacy of every visitor, client, and enterprise partner. Any information you share through our website, contact channels, direct phone calls, or email is used exclusively to respond to your inquiries and deliver requested software engineering and creative media services.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2rem;">
+                        <div style="padding: 1.25rem; background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                            <strong style="color: var(--color-midnight); display: block; margin-bottom: 0.35rem;">🔒 Strict Confidentiality</strong>
+                            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin: 0;">No client source code, database architectures, credentials, or proprietary workflows are published on public channels or shared with third parties.</p>
+                        </div>
+                        <div style="padding: 1.25rem; background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                            <strong style="color: var(--color-midnight); display: block; margin-bottom: 0.35rem;">🚫 Zero Commercial Sale of Data</strong>
+                            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin: 0;">We never sell, rent, lease, or monetize your contact or business data with third-party advertisers or data brokers.</p>
+                        </div>
+                        <div style="padding: 1.25rem; background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                            <strong style="color: var(--color-midnight); display: block; margin-bottom: 0.35rem;">🛡️ Encrypted Infrastructure</strong>
+                            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin: 0;">Project communications, database schemas, and server credentials are maintained under restricted access protocols and bank-grade data security.</p>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1.5rem; background-color: var(--color-sprout-bg); border-radius: var(--radius-md); border: 1px solid var(--color-sprout-border);">
+                        <strong style="color: #1b6c43; display: block; margin-bottom: 0.35rem;">Contact for Privacy & NDA Inquiries:</strong>
+                        <p style="font-size: 0.95rem; color: var(--color-text-main); margin: 0;">
+                            Email: <a href="mailto:director@codapiontech.in" style="color: var(--color-blue-primary); font-weight: 600;">director@codapiontech.in</a> | Phone: <a href="tel:+918433488313" style="color: var(--color-blue-primary); font-weight: 600;">+91 8433488313</a>
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="index.html" class="btn btn-secondary">← Back to Homepage</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p style="margin-bottom: 0.5rem;"><a href="index.html" style="color: var(--accent);">← Back to Homepage</a></p>
-            <p>© 2026 Codapion Technologies. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="site-footer" style="padding: 3rem 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <p style="font-size: 0.9rem; color: #94a3b8;">© 2026 Codapion Technologies. All rights reserved.</p>
+            <div style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+                <a href="index.html" style="color: #cbd5e1;">Home</a>
+                <a href="index.html#solutions" style="color: #cbd5e1;">Solutions</a>
+                <a href="index.html#contact" style="color: #cbd5e1;">Contact</a>
+            </div>
         </div>
     </footer>
 </body>
